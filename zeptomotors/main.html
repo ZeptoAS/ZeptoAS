@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="//cdn.optimizely.com/js/2780910713.js"></script>-->
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico?v=2">
+    <title>Zepto Motors</title>
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/home.css">
+</head>
+<body ng-app="pm.app.home" class="home">
+    <header id="menu" site-header class="site-header">
+        <div class="site-header-bg"></div>
+        <div class="nav-wrapper">
+            <div role="navigation" class="container">
+                <a href="/" class="brand">
+                    <img src="static/images/zepto.png" height="25">
+                </a>
+                <button id="toggle" navigationexpand class="lines-button x visible-xs visible-sm">
+                <span class="lines"></span>
+            </button>
+            <nav class="primary-nav"><ul class="list-unstyled clearfix">
+                <li class="tab tab-one">
+                    <a href navigation-sub-nav ng-click="tab_one_active = !tab_one_active; tab_two_active = false" class="title">Product</a>
+                    <div class="submenu"><div class="submenu-wrapper">
+                        <ul class="list-unstyled">
+                            <li><a href="/how-it-works" track-link="Submenu clicked: How it Works">
+                                <span>Specifications</span>
+                            </a></li>
+                            <li><a href="/connect" track-link="Submenu clicked: Connect">
+                                <span>How It Works</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="tab tab-two">
+                <a href navigation-sub-nav ng-click="tab_two_active = !tab_two_active; tab_one_active = false" class="title">Applications</a>
+                <div class="submenu"><div class="submenu-wrapper">
+                    <ul class="list-unstyled">
+                        <li><a href="/solutions/smart-cities" track-link="Submenu clicked: Smart Cities">
+                            <span>Sail-Boats</span>
+                        </a>
+                    </li>
+                    <li><a href="/solutions/tactical-urbanism" track-link="Submenu clicked: Tactical Urbanism">
+                        <span>Motor Boats</span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</li>
+</ul>
+</nav>
+<nav class="secondary-nav">
+    <a href="" track-link="&quot;Get Started&quot; CTA clicked" track-link-placement="Site header" class="demo btn btn-primary">Contact Us</a>
+</nav>
+</div>
+</div>
+</header>
+
+<main ng-class="{'tab-active': tab_one_active || tab_two_active}">
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                    <header>
+                        <h1 class="title">Enabling A More Sustainable Planet</h1>
+                        <div class="tiny-bottom-border"></div>
+                        <p class="byline">Zepto Motors<br class="hidden-xs">
+                            Electric Marine Propulsion Systems
+                        </p>
+                        <div class="ng-cloak">
+                            <watch-video-cta-link video-id="m3irxvtv4m">
+                                <span class="text">See How it Works</span>
+                            </watch-video-cta-link>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="classifications shaded">
+    <div class="container">
+        <h2 class="title">A cleaner, more peaceful and reliable alternative for your boat. ++
+        </h2>
+        <ul class="list-unstyled">
+            <li class="pedestrians">
+                <img src="static/images/sailboat.png"/>
+                <span class="text">Sailboats</span>
+            </li>
+            <li class="bicycles">
+                <img src="static/images/speedboat.png"/>                
+                <span class="text">Motor Boats</span>
+            </li>
+        </ul>
+        <a href="" isolate target="_blank">Learn more about applications</a>
+    </div>
+</section>
+<section class="computer-vision">
+    <div class="container">
+        <h2 isolate class="title">Innovative and modern control of your motor</h2>
+        <p>Easy to use and reliable</p>
+        <img src="static/images/engine.png"/>
+        <img src="static/images/motherboard.png"/>
+        <img src="static/images/battery.png"/>
+
+        <!--<div class="illustration"></div>-->
+        <p class="text">We combine the latest battery technology and a durable electric 
+            engine with our innovative controller. The Zepto controller gets the most 
+            out of the available power to provide the most efficient solution for marine 
+            transport. 
+
+        </p>
+        <img src="static/images/smartphone.png"/>
+
+        <a href="" target="_blank">
+            Learn more about our technology
+        </a>
+    </div>
+</section>
+
+</main>
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="credits">
+            <div class="made-in-ny">Made in Norway</div>
+            <cite>Zepto AS 2016</cite>
+        </div>
+    </div>
+</footer>
+<script src="static/js/common.min.js">
+</script>
+<script type="text/ng-template" id="/templates/video-modal.html">
+<div class="clearfix"><a ng-click="$dismiss()" class="close-button text-hover-only pull-right"><span class="icon">×</span><span class="text">Close</span></a></div><iframe ng-src="{{vm.url}}" allowtransparency="true" frameborder="0" scrolling="no" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360" class="wistia_embed"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js" async></script></script>
+<script src="static/js/home-app.min.js"></script>
+<script>
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2Dm2RN1yHxeMDfbhUDtW3O2Zd3CGQrDA';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+</body>
+</html>
