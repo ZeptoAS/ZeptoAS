@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--<script src="//cdn.optimizely.com/js/2780910713.js"></script>-->
+	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico?v=2">
+	<title>Zepto Motors</title>
+	<link rel="stylesheet" href="static/css/common.css">
+	<link rel="stylesheet" href="static/css/how-it-works.css">
+</head>
+<body ng-app="pm.app.home" class="home">
+	<header id="menu" site-header class="site-header">
+		<div class="site-header-bg"></div>
+		<div class="nav-wrapper">
+			<div role="navigation" class="container">
+				<a href="main.html" class="brand">
+					<img src="static/images/zepto.png" height="25">
+				</a>
+				<button id="toggle" navigationexpand class="lines-button x visible-xs visible-sm">
+					<span class="lines"></span>
+				</button>
+				<nav class="primary-nav"><ul class="list-unstyled clearfix">
+					<li class="tab tab-one">
+						<!--<a href navigation-sub-nav ng-click="tab_one_active = !tab_one_active; tab_two_active = false" class="title">Product</a>-->
+						<a href="product.html" class="title">Product</a>
+						<div class="submenu"><div class="submenu-wrapper">
+							<ul class="list-unstyled">
+								<li><a href="" track-link="Submenu clicked: How it Works">
+									<span>Specifications</span>
+								</a></li>
+								<li><a href="product.html" track-link="Submenu clicked: Connect">
+									<span>How It Works</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="tab tab-two">
+					<a href navigation-sub-nav ng-click="tab_two_active = !tab_two_active; tab_one_active = false" class="title">Applications</a>
+					<div class="submenu"><div class="submenu-wrapper">
+						<ul class="list-unstyled">
+							<li><a href="/solutions/smart-cities" track-link="Submenu clicked: Smart Cities">
+								<span>Sail-Boats</span>
+							</a>
+						</li>
+						<li><a href="/solutions/tactical-urbanism" track-link="Submenu clicked: Tactical Urbanism">
+							<span>Motor Boats</span>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</nav>
+<nav class="secondary-nav">
+	<a href="" track-link="&quot;Get Started&quot; CTA clicked" track-link-placement="Site header" class="demo btn btn-primary">Contact Us</a>
+</nav>
+</div>
+</div>
+</header>
+
+<main ng-class="{'tab-active': tab_one_active || tab_two_active}">
+	<section>
+		<div class="container"><div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<h1 isolate>The Zepto Sail Drive is the <br> modern alternative for marine propulsion</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center description-text">
+				<p class="byline">
+                    Using a reliable electric engine, modern battery technology and our innovative controller which enhances 
+                    the full potential of electric engines to give you a more reliable and better suited way to drive your sailboat 
+                    when sailing is not possible. 
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="images/how-it-works/get-started.png" class="get-started img-responsive">
+				<div watch-video-cta video-id="2u2yal2ku2" class="play-button-overlay"></div>
+			</div>
+			<div class="col-sm-6 text-content">
+				<h2>Silent</h2>
+				<p>Electric engines create a lot less noise and vibrations than the dielsel engines most widely used today. 
+					This allows you to enjoy nature in peace. 
+				</p>
+				<a href="">Learn More..</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="container"><div class="row">
+		<div class="col-sm-6">
+			<img src="images/how-it-works/how-it-works.png" class="img-responsive">
+			<div watch-video-cta video-id="qpd25wgdvf" class="play-button-overlay"></div>
+		</div>
+		<div class="col-sm-6 text-content">
+			<h2>Clean</h2>
+			<p>The electric engine produces no emissions which is good for both you and the planet. 
+			</p>
+			<a href="" target="_blank">Learn More..</a>
+		</div>
+	</div>
+</div>
+</section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="images/how-it-works/scalability.png" class="img-responsive">
+			</div>
+			<div class="col-sm-6 text-content">
+				<h2>Reliable</h2>
+				<p>Out electric engine has a much more simple design than diesel engines and a lot less moving parts. There is therefore no need for regular maintenance and much less can go wrong. 
+				</p>
+				<a href="" target="_blank">Learn More..</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="shaded data-accesses">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7 col-sm-offset-3 text-center section-title">
+				<h1>Our controller gives new modern abilities to your engine</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 data-access">
+				<img src="static/images/regen.png"  height="200">
+				<h3>Regenerative Breaking</h3>
+				<p>Regenerative breaking allows you to charge up your batteries while sailing.</p>
+			</div>
+			<div class="col-sm-4 data-access">
+				<!--<img src="static/images/" class="img-responsive">-->
+				<h3>Instant Torque</h3>
+				<p>...........</p>			
+			</div>
+			<div class="col-sm-4 data-access">
+				<!--<img src="static/images/" class="img-responsive">-->
+				<h3>High Efficiency</h3>
+				<p>...........</p>	
+			</div>
+		</div>
+	</div>
+</section>
+<section class="gif-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="static/images/app1.png" class="img-responsive">
+			</div>
+			<div class="col-sm-6 text-content">
+				<h2 isolate>The Zepto Motors App gives<br class="hidden-xs">you full control of the Sail Drive</h2>
+				<p>See how much battery you have left, what speed you are going or how much power is being consumed all within the app. </p>
+				<a href="/privacy">More Features ..</a>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<footer class="site-footer">
+	<div class="container">
+
+		<div class="credits">
+			<div class="made-in-ny">Made in Norway</div>
+			<cite>Zepto AS 2016</cite>
+		</div>
+	</div>
+</footer>
+<script src="static/js/common.min.js"></script>
+<script src="static/js/home-app.min.js"></script>
+
+</body>
+</html>
